@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;   
+  }
+  .ampel {
+    margin-top: 40px;
+    width: 250px;
+    height: 400px;
+    background-image: url(2236.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .ampel div{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  .red {
+    background-image: url(sticker.webp);
+    animation: redLight 6s infinite;
+    margin-top: 70px;
+    margin-left: 95px;
+    transition: width 2s, height 2s;  
+  }
+  .red:hover{
+      width: 90px;
+      height: 90px;
+  }
+  .yellow {
+    background-image: url(sticker3.webp);
+    animation: yellowLight 6s infinite;
+    position: fixed;
+    top: 218px;
+    margin-left: 96px;
+  }
+  .green {
+    background-image: url(sticker5.webp);
+    animation: greenLight 6s infinite;
+    position: fixed;
+    top: 328px;
+    transform: translate(100px, 0px);
+  }
+  @keyframes redLight {
+    form {background-image: url(sticker.webp);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    to { background-image: url(sticker2.webp);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  }
+  @keyframes yellowLight {
+    form { background-image: url(sticker3.webp);
+      background-repeat: no-repeat;
+      background-size: cover;}
+    to { background-image: url(sticker4.webp);
+      background-repeat: no-repeat;
+      background-size: cover;}
+  }
+  @keyframes greenLight {
+      form { background-image: url(sticker5.webp);
+      background-repeat: no-repeat;
+      background-size: cover;}
+    to { background-image: url(sticker6.webp);
+      background-repeat: no-repeat;
+      background-size: cover;}
+  }
